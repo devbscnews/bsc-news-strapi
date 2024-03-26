@@ -22,11 +22,6 @@
     },
     "pricePeriod": {
       "type": "string"
-    },
-    "product_features": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product-feature.product-feature"
     }
   }
 }
