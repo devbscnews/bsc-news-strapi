@@ -128,6 +128,10 @@
     "Paid": {
       "type": "boolean",
       "default": false
+    },
+    "PriceAnalysis": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
