@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = ({ env }) => [
   "strapi::errors",
   {
     name: "strapi::security",
@@ -16,11 +16,20 @@ module.exports = [
             "https://radiant-flame-44830ef920.nyc3.digitaloceanspaces.com",
             "https://radiant-flame-44830ef920.media.strapiapp.com", // added this line
             "*.strapi.io",
+            "market-assets.strapi.io",
+            env("CF_PUBLIC_ACCESS_URL")
+              ? env("CF_PUBLIC_ACCESS_URL").replace(/^https?:\/\//, "")
+              : "",
           ],
           "media-src": [
             "'self'",
             "data:",
             "blob:",
+            "market-assets.strapi.io",
+            env("CF_PUBLIC_ACCESS_URL")
+              ? env("CF_PUBLIC_ACCESS_URL").replace(/^https?:\/\//, "")
+              : "",
+
             // `https://${env("AWS_BUCKET")}.s3.${env(
             //   "AWS_REGION"
             // )}.amazonaws.com`,
