@@ -12,6 +12,10 @@ module.exports = [
             "data:",
             "blob:",
             "https://storage.bsc.news", // added this line
+            "https://radiant-flame-44830ef920.fra1.digitaloceanspaces.com",
+            "https://radiant-flame-44830ef920.nyc3.digitaloceanspaces.com",
+            "https://radiant-flame-44830ef920.media.strapiapp.com", // added this line
+            "*.strapi.io",
           ],
           "media-src": [
             "'self'",
