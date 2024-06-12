@@ -14,6 +14,8 @@ module.exports = ({ env }) => {
            * `https://<ACCOUNT_ID>.r2.cloudflarestorage.com`
            */
           endpoint: env("CF_ENDPOINT"),
+          baseUrl: env("CF_ENDPOINT"),
+
           params: {
             Bucket: env("CF_BUCKET"),
           },
