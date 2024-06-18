@@ -14,6 +14,12 @@ const cachePurge = async (slugname) => {
     if (slugname) {
       let res3 = await fetch(`${fe_url}/api/revalidate?tag=${slugname}`);
       let res3Data = await res3.json();
+      let res4 = await fetch(
+        `${fe_url}/api/revalidatepath?path=/post/${slugname}`
+      );
+      let res4Data = await res4.json();
+      let res5 = await fetch(`${fe_url}/api/revalidatepath?path=/`);
+      let res5Data = await res5.json();
     }
   } catch (error) {}
 };
