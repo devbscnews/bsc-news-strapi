@@ -132,6 +132,9 @@
     "PriceAnalysis": {
       "type": "boolean",
       "default": false
+    },
+    "RedirectSlug": {
+      "type": "string"
     }
   }
 }
