@@ -135,6 +135,10 @@
     },
     "RedirectSlug": {
       "type": "string"
+    },
+    "OrganicSponsored": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
