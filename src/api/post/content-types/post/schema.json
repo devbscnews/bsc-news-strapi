@@ -33,7 +33,9 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "ReadingTime": {
       "type": "integer"
@@ -133,6 +135,10 @@
     },
     "RedirectSlug": {
       "type": "string"
+    },
+    "OrganicSponsored": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
