@@ -139,6 +139,9 @@
     "OrganicSponsored": {
       "type": "boolean",
       "default": false
+    },
+    "Carousel": {
+      "type": "boolean"
     }
   }
 }
