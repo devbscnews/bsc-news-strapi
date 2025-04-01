@@ -114,12 +114,6 @@
     "CmcID": {
       "type": "text"
     },
-    "Author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::author.author",
-      "inversedBy": "Post"
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
@@ -142,6 +136,16 @@
     },
     "Carousel": {
       "type": "boolean"
+    },
+    "Author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "posts"
+    },
+    "OrganicIGaming": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
