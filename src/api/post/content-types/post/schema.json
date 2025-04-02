@@ -146,6 +146,9 @@
     "OrganicIGaming": {
       "type": "boolean",
       "default": false
+    },
+    "Trending": {
+      "type": "boolean"
     }
   }
 }
