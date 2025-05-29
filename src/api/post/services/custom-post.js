@@ -94,7 +94,7 @@ module.exports = {
         Author: true,
         Tags: true,
       },
-      sort: { publishedAt: "desc" },
+      sort: { PublishDate: "desc" },
       limit,
     });
 
@@ -131,7 +131,7 @@ module.exports = {
         ChainTag: true,
         Tags: true,
       },
-      sort: { publishedAt: "desc" },
+      sort: { PublishDate: "desc" },
       limit,
     });
 
