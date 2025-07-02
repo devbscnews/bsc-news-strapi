@@ -9,6 +9,9 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "resolutions": {
+    "minimatch": "^9.0.0"
+  },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "2.1.0",
     "@strapi/plugin-color-picker": "4.12.5",
