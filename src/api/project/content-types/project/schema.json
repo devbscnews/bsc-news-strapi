@@ -23,19 +23,20 @@
       "required": true
     },
     "Mainimage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "CoverImage": {
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "CoverImage": {
       "type": "media",
-      "multiple": true
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "Description": {
       "type": "text",
@@ -62,6 +63,10 @@
     },
     "Telegram": {
       "type": "string"
+    },
+    "Featured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
