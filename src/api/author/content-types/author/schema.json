@@ -44,6 +44,16 @@
       "relation": "oneToMany",
       "target": "api::post.post",
       "mappedBy": "Author"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Active": {
+      "type": "boolean",
+      "default": false
+    },
+    "LinkedIn": {
+      "type": "string"
     }
   }
 }
