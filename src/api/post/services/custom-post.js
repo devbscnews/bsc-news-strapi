@@ -24,6 +24,11 @@ module.exports = {
           Picture: { fields: ["url"] },
         },
       },
+      FAQ: {
+        populate: {
+          FaqItem: { fields: ["Question", "Answer"] },
+        },
+      },
       seo: {
         // fields: ["metaTitle", "metaDescription"],
         populate: {
