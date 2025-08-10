@@ -149,6 +149,11 @@
     },
     "Trending": {
       "type": "boolean"
+    },
+    "FAQ": {
+      "type": "component",
+      "repeatable": false,
+      "component": "faq.faq"
     }
   }
 }
