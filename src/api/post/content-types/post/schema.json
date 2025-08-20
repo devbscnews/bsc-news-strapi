@@ -154,6 +154,12 @@
       "type": "component",
       "repeatable": false,
       "component": "faq.faq"
+    },
+    "SponsoredCryptoDisclaimer": {
+      "type": "boolean"
+    },
+    "CasinoDisclaimer": {
+      "type": "boolean"
     }
   }
 }
