@@ -58,4 +58,5 @@ module.exports = ({ env }) => [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
+  "global::cache-headers",
 ];
