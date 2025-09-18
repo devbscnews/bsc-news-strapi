@@ -67,6 +67,10 @@
     "Featured": {
       "type": "boolean",
       "default": false
+    },
+    "YoutubeIds": {
+      "type": "text",
+      "regex": "^[a-zA-Z0-9_-]{11}(?:,[a-zA-Z0-9_-]{11})*$"
     }
   }
 }
