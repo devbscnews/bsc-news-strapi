@@ -6,7 +6,7 @@ module.exports = (config, { strapi }) => {
 
     // Set cache headers for API routes
     if (ctx.request.url.startsWith("/api/")) {
-      ctx.set("Cache-Control", "public, max-age=10800"); // 3 hours
+      ctx.set("Cache-Control", "public, max-age=600"); // 3 hours
       ctx.set("Vary", "Accept-Encoding");
     }
   };
