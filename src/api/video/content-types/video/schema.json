@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "publishedTime": {
+      "type": "datetime"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "isShort": {
+      "type": "boolean",
+      "default": false
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "customTitle": {
+      "type": "string"
+    },
+    "customThumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isSynced": {
+      "type": "boolean",
+      "default": false
+    },
+    "syncedAt": {
+      "type": "datetime"
+    },
+    "statistics": {
+      "type": "json"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "relatedVideos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video.video"
+    },
+    "youtubeTags": {
+      "type": "json"
+    }
+  }
+}
