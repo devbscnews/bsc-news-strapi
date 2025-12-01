@@ -97,7 +97,7 @@ module.exports = {
   },
 
   /**
-   * LATEST VIDEOS (exclude current)
+   * LATEST VIDEOS (exclude current video)
    */
   async findLatestVideos(video, limit = 8) {
     return await strapi.entityService.findMany("api::video.video", {
