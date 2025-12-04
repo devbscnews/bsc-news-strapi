@@ -42,7 +42,7 @@ module.exports = {
     if (results.length > 0) return results;
 
     // 3. Fallback: latest (excluding this)
-    results = await this.findLatestVideos(video, limit);
+    results = await this.findLatestVideos(video, limit, false);
     if (results.length > 0) return results;
 
     // 4. Final fallback: ANY videos except this one
@@ -99,9 +99,9 @@ module.exports = {
   /**
    * LATEST VIDEOS (exclude current video)
    */
-  async findLatestVideos(video, limit = 8) {
+  async findLatestVideos(video, limit = 8, isShort = true) {
     return await strapi.entityService.findMany("api::video.video", {
-      filters: { id: { $ne: video.id }, isShort: { $eq: true } },
+      filters: { id: { $ne: video.id }, isShort: { $eq: isShort } },
       limit,
       sort: { publishedTime: "desc" },
       populate: { customThumbnail: { fields: ["url"] } },
