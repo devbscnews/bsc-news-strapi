@@ -73,7 +73,7 @@ module.exports = {
         data.publishedTime = meta.publishedTime;
         data.duration = meta.duration;
         data.thumbnail = meta.thumbnail;
-        data.isShort = meta.isShort;
+        // data.isShort = meta.isShort;
         data.statistics = meta.statistics;
         data.youtubeTags = meta.youtubeTags || [];
 
@@ -114,7 +114,7 @@ module.exports = {
         data.publishedTime = meta.publishedTime;
         data.duration = meta.duration;
         data.thumbnail = meta.thumbnail;
-        data.isShort = meta.isShort;
+        // data.isShort = meta.isShort;
         data.statistics = meta.statistics;
         data.youtubeTags = meta.youtubeTags || [];
 
