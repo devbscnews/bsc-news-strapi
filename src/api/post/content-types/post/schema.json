@@ -160,6 +160,9 @@
     },
     "CasinoDisclaimer": {
       "type": "boolean"
+    },
+    "HideFromRss": {
+      "type": "boolean"
     }
   }
 }
