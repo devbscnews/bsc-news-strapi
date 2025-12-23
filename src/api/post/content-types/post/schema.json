@@ -163,6 +163,9 @@
     },
     "HideFromRss": {
       "type": "boolean"
+    },
+    "VideoTrendingCarousel": {
+      "type": "boolean"
     }
   }
 }
